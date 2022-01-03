@@ -1,0 +1,122 @@
+body {
+    margin: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #04BFBF;
+    width: 100%;
+    padding: 0%;
+    color: #FFFFFF;
+
+}
+
+header .container {
+    height: auto;
+    width: 95%;
+    margin: 5px auto;
+}
+
+.branding{
+    margin-top: 5px;
+    float: left;
+    font-size: 21;
+    font-weight: 900;
+}
+
+.logo {
+    float: left;
+    height: 40px;
+    padding-right: 10px;
+    opacity: 50%;
+}
+
+nav {
+    float: right;
+}
+
+.nav {
+    margin: 10px 0px;
+}
+
+
+.nav li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14;
+    font-weight: 600;
+}
+
+.nav a {
+    padding: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    opacity: 90%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav .current {
+    font-weight: 800;
+    font-size: 16;
+}
+
+.sidebar {
+    position: fixed;
+    box-sizing: border-box;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 15px;
+    background-color: #013D3D;
+    color: #FFFFFF;
+}
+
+.sidebar h2 {
+    font-size: 16;
+}
+
+.fiche {
+    position: fixed;
+    box-sizing: border-box;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.fiche table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fiche thead th{
+    text-align: left;   
+    border-bottom: 1px solid #000;
+    font-size: 28;
+    color: #013D3D;
+}
+
+.fiche table .tag {
+    width: 10%;
+    text-transform: uppercase;
+    font-size: 14;
+    letter-spacing: -0.2;
+    color: #013D3D;
+}
+
+.fiche table .content {
+    width: 40%;
+}
+
+

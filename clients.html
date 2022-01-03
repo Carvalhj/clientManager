@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./public/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
+        <script src="handlebars.min.js"></script>
+        <script id="infoSource" type="text/x-handlebars-template">
+            <tr>
+                <td class="tag">Client:</td>
+                <td id="client" colspan="3">{{name}}</td>
+            </tr>
+            <tr>
+                <td class="tag">Projet:</td>
+                <td id="projet" colspan="3">{{projets.name}}</td>
+            </tr>
+            <tr>
+                <td class="tag">Contact:</td>
+                <td class="content" id="contact">{{contactName}}</td>
+                <td class="tag">Courriel:</td>
+                <td class="content" id="courriel">{{contactMail}}</td>
+            </tr>
+            <tr>
+                <td class="tag">Description:</td>
+                <td id="description" colspan="3">{{projets.description}}</td>
+            </tr>
+        </script>
+        <script id="sidebarSource" type="text/x-handlebars-template">
+            {{#each clients}}
+            <li>{{this.name}}</li>
+            {{/each}}
+        </script>
+        <title>D&eacute;veloppement application - Accueil</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img class="logo" src="./ASSETS/IMG/LOGO.png" />
+                <hi class="branding">MyApp</hi>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a class="current" href="clients.html">Clients</a></li>
+                        <li><a href="temps.html">Temps</a></li>
+                        <li>|</li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
+
+        <main>
+            <section class="sidebar">
+                <h2>Menu clients</h2>
+                <ul id="sidebar">
+                </ul>
+            </section>
+            <section class="fiche">
+                <table class="fiche-head">
+                    <thead class="title">
+                        <tr>
+                            <th colspan="4">Fiche projet</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="information">
+                        <!--
+                        <tr>
+                            <td class="tag">Client:</td>
+                            <td class="table-left" id="client" colspan="3">(TITRE)</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">Projet:</td>
+                            <td class="table-left" id="projet" colspan="3">(PROJET)</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">Contact:</td>
+                            <td class="table-left" id="contact">(CONTACT)</td>
+                            <td class="tag">Courriel:</td>
+                            <td class="table-right" id="courriel">(COURRIEL)</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">Description:</td>
+                            <td id="description" colspan="3">(DESCRIPTION)</td>
+                        </tr>
+                    -->
+                    </tbody>
+
+
+            </section>
+
+        </main>
+
+        <script src="public/main.js"></script>
+        
+    </body>
+</html>
